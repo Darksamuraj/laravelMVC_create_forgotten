@@ -42,5 +42,10 @@
                 <div class="title">Page 1</div>
             </div>
         </div>
+		<ul>
+			@foreach($tasks as $task)
+			<li> {{$task -> created_at}}</li>
+			@endforeach
+		</ul>
     </body>
 </html>

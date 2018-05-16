@@ -39,8 +39,16 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Page 3</div>
+                <div class="title">Page 3 </div>
             </div>
         </div>
+		<ul>
+			@foreach($tasks as $task)
+			<a href="one/{{$task->id}}">
+				<li> {{$task -> body}}</li>
+			</a>
+			@endforeach
+		</ul>
+		
     </body>
 </html>
