@@ -7,9 +7,9 @@ Route::get('/', function () {
 
 
 Route::get('/one/{task}', function ($id) {  //Поиск определенного таска
-	$task = DB::table('tasks') -> find($id);
-	dd($task);
-    return view('one', compact('tasks'));
+	//$task = DB::table('tasks') -> find($id);
+	$task = App\task::find($id);
+    return view('one', compact('task'));
 });
 
 
@@ -19,7 +19,8 @@ Route::get('/two', function () {
 });
 
 Route::get('/three', function () {     //вывод какого то поля таблицы таскс
-	$tasks = DB::table('tasks')->get();
+	//$tasks = DB::table('tasks')->get();
+	$tasks=App\task::all();
     return view('three',compact('tasks'));
 });
 

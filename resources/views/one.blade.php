@@ -43,9 +43,7 @@
             </div>
         </div>
 		<ul>
-			@foreach($tasks as $task)
-			<li> {{$task -> created_at}}</li>
-			@endforeach
+			<li> {{$task -> body}}</li>
 		</ul>
     </body>
 </html>
