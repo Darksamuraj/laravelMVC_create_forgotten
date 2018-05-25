@@ -21,6 +21,9 @@ Route::get('/one/{task}', function ($id) {  //Поиск определенного таска
 Route::get('/two', function () {
     return view('two');
 });
+Route::get('/sergey', function () {
+    return view('sergey');
+});
 /*
 Route::get('/three', function () {     //вывод какого то поля таблицы таскс
 	//$tasks = DB::table('tasks')->get();
@@ -30,3 +33,4 @@ Route::get('/three', function () {     //вывод какого то поля таблицы таскс
 });
 */
 Route::get('/page','Pagecontroller@rename');
+?>

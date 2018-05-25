@@ -39,7 +39,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Page 3 </div>
+                <div class="title">Sergey</div>
             </div>
         </div>
 		<ul>
